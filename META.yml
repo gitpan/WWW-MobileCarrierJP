@@ -15,6 +15,9 @@ no_index:
   directory: 
     - inc
     - t
+recommends: 
+  CAM::PDF: 0
 requires: 
-  Web::Scraper: 0
-version: 0.01
+  HTML::Selector::XPath: 0.03
+  Web::Scraper: 0.24
+version: 0.02
