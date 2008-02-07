@@ -1,10 +1,11 @@
 --- 
 abstract: scrape mobile carrier information
-author: Tokuhiro Matsuno <tokuhirom gmail com>
+author: 
+  - Tokuhiro Matsuno <tokuhirom gmail com>
 build_requires: 
   Test::More: 0
 distribution_type: module
-generated_by: Module::Install version 0.650
+generated_by: Module::Install version 0.680
 license: perl
 meta-spec: 
   url: http://module-build.sourceforge.net/META-spec-v1.3.html
@@ -19,4 +20,4 @@ recommends:
 requires: 
   HTML::Selector::XPath: 0.03
   Web::Scraper: 0.24
-version: 0.11
+version: 0.12
