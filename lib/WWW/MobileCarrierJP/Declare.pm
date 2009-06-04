@@ -13,7 +13,13 @@ BEGIN {
     };
 }
 
-our @EXPORT = qw(parse_one scraper process col as_tree result);
+our @EXPORT = qw(parse_one scraper process col as_tree result p);
+
+sub p {
+    require Data::Dumper;
+    print STDERR Data::Dumper::Dumper(@_);
+}
+
 
 sub import {
     my $class = shift;
@@ -43,8 +49,9 @@ sub parse_one {
             my $result = scraper {
                 process $args{xpath}, 'rows[]', $args{scraper};
             }->scrape( URI->new($url) )->{rows};
+            my @result = grep { $_ } @$result;
 
-            push @res, @$result;
+            push @res, @result;
         }
         return \@res;
     };
