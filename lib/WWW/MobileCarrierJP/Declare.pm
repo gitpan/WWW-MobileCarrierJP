@@ -5,7 +5,7 @@ use utf8;
 use base qw/Exporter/;
 use Web::Scraper;
 use URI;
-use LWP::UserAgent;
+use LWP::UserAgent 5.827;
 use Carp ();
 use Encode qw/decode/;
 BEGIN {
