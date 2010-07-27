@@ -28,7 +28,8 @@ requires:
   LWP::UserAgent: 5.834
   URI: 0
   Web::Scraper: 0.24
+  perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tokuhirom/www-mobilecarrierjp.git
-version: 0.45
+version: 0.46
