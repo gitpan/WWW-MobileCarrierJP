@@ -4,6 +4,7 @@ author:
   - 'Tokuhiro Matsuno <tokuhirom gmail com>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
+  LWP::Online: 1.07
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
@@ -19,7 +20,7 @@ no_index:
     - t
 recommends:
   CAM::PDF: 0
-  HTML::TreeBuilder::LibXML: 0.11
+  HTML::TreeBuilder::LibXML: 0.12
 requires:
   Exporter: 0.60
   Filter::Util::Call: 0
@@ -32,4 +33,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tokuhirom/www-mobilecarrierjp.git
-version: 0.47
+version: 0.48

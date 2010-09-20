@@ -16,18 +16,17 @@ features(
     ],
     'fast parser' => [
         -default => 0,
-        recommends('HTML::TreeBuilder::LibXML', 0.11),
+        recommends('HTML::TreeBuilder::LibXML', 0.12),
     ],
 );
 
 auto_set_repository();
 
 tests 't/*.t t/*/*.t t/*/*/*.t t/*/*/*/*.t';
-test_requires 'LWP::Online';
-build_requires 'Test::More';
+test_requires 'LWP::Online' => 1.07;
+test_requires 'Test::More' => 0.96;
 use_test_base;
 
 install_script('tools/www-mobilecarrierjp-dump_all.pl');
 
-auto_include;
 WriteAll;
