@@ -1,5 +1,16 @@
 Revision history for Perl extension WWW::MobileCarrierJP
 
+0.50
+
+    - move live tests to xt/ for fast installing(suggested by miyagawa++)
+
+0.49
+
+    - depend to HTML-TableExtract(tokuhirom)
+    - WWW::MobileCarrierJP::DoCoMo::CIDR: fixed broken scraper(tokuhirom)
+    - ezweb is no longer provides brew device information. we can't provides
+      the feature.(tokuhirom)
+
 0.48
 
     - some tweaks for Makefile.PL(tokuhirom)
