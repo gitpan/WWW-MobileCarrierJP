@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use 5.008001;
 
-our $VERSION = '0.50';
+our $VERSION = '0.51';
 
 1;
 
@@ -29,13 +29,23 @@ This module makes machine readable format from html :)
 
 =head2 IMAGE
 
-=head3 ThirdForce
+=head3 Softbank
 
 softbank phone supports jpeg(without type C2).
 
 softbank phone supports gif(without type C, P, W).
 
 L<http://www2.developers.softbankmobile.co.jp/dp/tool_dl/download.php?docid=120&companyid=>
+
+=head1 COOKBOOK
+
+=over 4
+
+=item HOW DO I GET YAMLs FASTER?
+
+use L<HTML::TreeBuilder::LibXML>.
+
+=back
 
 =head1 AUTHOR
 

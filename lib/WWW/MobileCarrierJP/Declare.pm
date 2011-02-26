@@ -8,13 +8,6 @@ use URI;
 use LWP::UserAgent 5.827;
 use Carp ();
 use Encode qw/decode/;
-BEGIN {
-    eval q{
-        use HTML::TreeBuilder::LibXML 0.04;
-        HTML::TreeBuilder::LibXML->replace_original(); # should be void context
-        1;
-    };
-}
 
 our @EXPORT = qw(parse_one scraper process col as_tree result p debug get);
 
@@ -58,6 +51,10 @@ sub parse_one {
 
     my $pkg = caller(0);
     no strict 'refs';
+
+    unless ($pkg->can('url')) {
+        *{"$pkg\::url"} = sub { $args{urls} };
+    }
 
     *{"$pkg\::scrape"} = sub {
         my @res = ();

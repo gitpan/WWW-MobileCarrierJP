@@ -13,9 +13,11 @@ parse_one(
 1;
 __END__
 
+=encoding utf-8
+
 =head1 NAME
 
-WWW::MobileCarrierJP::ThirdForce::UserAgent - get UserAgent informtation from ThirdForce site.(OBSOLETE)
+WWW::MobileCarrierJP::ThirdForce::UserAgent - get UserAgent informtation from Softbank site(OBSOLETE)
 
 =head1 SYNOPSIS
 
@@ -25,7 +27,7 @@ WWW::MobileCarrierJP::ThirdForce::UserAgent - get UserAgent informtation from Th
 
 THIS MODULE IS OBSOLETE.
 
-YOU SHOULD USE ThirdForce::HTTPHeader & ThirdForce::Service.
+YOU SHOULD USE Softbank::HTTPHeader & Softbank::Service.
 
 This module is no longer supported.
 
