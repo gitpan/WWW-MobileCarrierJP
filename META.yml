@@ -5,6 +5,8 @@ author:
 build_requires:
   ExtUtils::MakeMaker: 6.42
   LWP::Online: 1.07
+  Test::Base: 0
+  Test::More: 0.96
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
@@ -23,7 +25,6 @@ recommends:
   CAM::PDF: 0
 requires:
   Exporter: 0.60
-  Filter::Util::Call: 0
   HTML::Selector::XPath: 0.03
   HTML::TableExtract: 2.1
   LWP::UserAgent: 5.834
@@ -34,4 +35,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tokuhirom/www-mobilecarrierjp.git
-version: 0.57
+version: 0.58
