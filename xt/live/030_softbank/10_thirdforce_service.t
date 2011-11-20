@@ -2,6 +2,7 @@ use strict;
 use warnings;
 use Test::Base;
 use LWP::Online ":skip_all";
+use Test::Requires 'Test::TypeConstraints';
 use WWW::MobileCarrierJP::Softbank::Service;
 use Mouse::Util::TypeConstraints;
 use Test::TypeConstraints;
@@ -27,7 +28,7 @@ subtype 'Test::Softbank::Service'
     => as 'HashRef'
     => where { defined $_->{model} && defined $_->{sappli} && defined $_->{pc_browser} };
 
-type_isa($res, "ArrayRef[Test::ServiceType]", "type is ok");
+type_isa($res, "ArrayRef[Test::Softbank::Service]", "type is ok");
 
 filters { info => [qw/yaml/] };
 run {
