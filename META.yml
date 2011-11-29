@@ -36,4 +36,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tokuhirom/www-mobilecarrierjp.git
-version: 0.60
+version: 0.61

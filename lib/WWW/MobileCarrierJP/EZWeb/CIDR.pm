@@ -14,7 +14,7 @@ sub scrape {
     for my $line ( split /\n/, $content ) {
         next if $skip_flag;
 
-        if ( $line =~ m{alt="PCSVのIPアドレス帯域"} ) {
+        if ( $line =~ m{id="PcsvSummer"} ) {
             $skip_flag++;
         } else {
             $body .= $line;
